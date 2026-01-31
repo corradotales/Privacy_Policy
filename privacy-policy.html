@@ -239,6 +239,60 @@
   </li>
 </ul>
 
+  <h3>Stripe Connect Account Data</h3>
+<p>
+  When you activate the Tips & Donations feature, we collect and process the following data through Stripe Connect:
+</p>
+<ul>
+  <li>
+    <strong>Stripe Account Information</strong>: Stripe Connect account ID, onboarding status, verification requirements
+  </li>
+  <li>
+    <strong>Financial Verification Data</strong>: Information required by Stripe for identity verification, including but not limited to:
+    <ul>
+      <li>Legal name, date of birth, address, government ID details (as required)</li>
+      <li>Bank account information for payouts</li>
+      <li>Tax identification information (where applicable)</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Account Status Data</strong>: Charges enabled status, payouts enabled status, current verification requirements
+  </li>
+  <li>
+    <strong>Transaction Data</strong>: Tips received, payout amounts, transaction fees, commission data
+  </li>
+  <li>
+    <strong>Platform Fee Data</strong>: Our 4% platform commission on received tips
+  </li>
+</ul>
+<p>
+  <strong>Important</strong>: Stripe Connect account setup and financial verification are handled directly by 
+  <a href="https://stripe.com/privacy" target="_blank">Stripe Payments Europe Ltd</a>. We only receive and store 
+  the minimum necessary account identifiers and status information to facilitate the service.
+</p>
+
+<h3>Tips and Donations Data</h3>
+<p>
+  When you send or receive tips through our platform, we process:
+</p>
+<ul>
+  <li>
+    <strong>Tip Transaction Data</strong>: Tip amount, timestamp, transaction ID, status (succeeded/failed/refunded)
+  </li>
+  <li>
+    <strong>Donor Information</strong> (optional): Donor name, message, anonymity preference
+  </li>
+  <li>
+    <strong>Recipient Information</strong>: Artist/creator receiving the tip, their Stripe Connect account ID
+  </li>
+  <li>
+    <strong>Fee Breakdown Data</strong>: Stripe processing fees, platform commission (4%), net amount to recipient
+  </li>
+  <li>
+    <strong>Payment Method Data</strong>: Type of payment method (card, etc.) - <strong>Note</strong>: We do not store actual payment card details
+  </li>
+</ul>
+
 <h3>Use of JukeShorts Content</h3>
 <p>
   Video content uploaded to JukeShorts is used to:
@@ -259,6 +313,77 @@
   <strong>Moderation</strong>: All videos undergo review before publication to ensure 
   compliance with our community guidelines. This process typically completes within 48 hours.
 </p>
+
+  <h3>Use of Stripe Connect Data</h3>
+<p>
+  Stripe Connect account data is used exclusively to:
+</p>
+<ul>
+  <li>
+    <strong>Enable Payouts</strong>: Facilitate transfer of received tips to your connected bank account
+  </li>
+  <li>
+    <strong>Account Verification</strong>: Monitor and display your Stripe account verification status
+  </li>
+  <li>
+    <strong>Compliance Monitoring</strong>: Ensure compliance with Stripe's Terms of Service and regulatory requirements
+  </li>
+  <li>
+    <strong>Service Provision</strong>: Connect your JukeBox account with Stripe for payment processing
+  </li>
+  <li>
+    <strong>Fee Calculation</strong>: Calculate and deduct our 4% platform commission on received tips
+  </li>
+</ul>
+<p>
+  <strong>Data Minimization</strong>: We store only the minimum necessary Stripe Connect data:
+</p>
+<ul>
+  <li>Stripe account ID (for linking transactions)</li>
+  <li>Account status flags (charges_enabled, payouts_enabled)</li>
+  <li>Onboarding completion status</li>
+  <li>Platform commission records for accounting purposes</li>
+</ul>
+
+<h3>Use of Tips and Donations Data</h3>
+<p>
+  Tips and donations data is used to:
+</p>
+<ul>
+  <li>
+    <strong>Process Transactions</strong>: Facilitate the transfer of funds from donors to recipients
+  </li>
+  <li>
+    <strong>Calculate Fees</strong>: Automatically calculate Stripe processing fees and our 4% platform commission
+  </li>
+  <li>
+    <strong>Generate Receipts</strong>: Provide transaction confirmations and receipts to both parties
+  </li>
+  <li>
+    <strong>Display History</strong>: Show tip history to recipients in their dashboard
+  </li>
+  <li>
+    <strong>Prevent Fraud</strong>: Monitor for suspicious transaction patterns
+  </li>
+  <li>
+    <strong>Generate Analytics</strong>: Provide creators with insights into their tip earnings (aggregated, non-personal data)
+  </li>
+</ul>
+<p>
+  <strong>Direct Charge Feature</strong>: For tips under €5, we employ Stripe's "Direct Charge" feature where:
+</p>
+<ul>
+  <li>The donor pays all Stripe processing fees (standard Stripe fees apply)</li>
+  <li>Our 4% platform commission is deducted from the tip amount</li>
+  <li>The recipient receives: Tip amount - 4% platform commission</li>
+</ul>
+<p>
+  <strong>Normal Charge Feature</strong>: For tips €5 and above:
+</p>
+<ul>
+  <li>Stripe processing fees and our 4% commission are shared</li>
+  <li>The recipient receives: Tip amount - Stripe fees - 4% platform commission</li>
+</ul>
 
 <h3>Use of QR Code and PDF Data</h3>
 <p>
@@ -384,6 +509,37 @@
   <a href="https://stripe.com/privacy" target="_blank">Privacy Policy</a>).
   We share only the data necessary to complete transactions (e.g., user email, amount, transaction ID).
 </p>
+
+  <h3>Stripe Connect Payment Processing</h3>
+<p>
+  Tips and donations are processed through <strong>Stripe Connect</strong>, which enables:
+</p>
+<ul>
+  <li>
+    <strong>Direct Payouts</strong>: Funds go directly from donor to recipient's Stripe account
+  </li>
+  <li>
+    <strong>Platform Commission</strong>: Automatic deduction of our 4% service fee
+  </li>
+  <li>
+    <strong>Regulatory Compliance</strong>: Stripe handles KYC (Know Your Customer) and AML (Anti-Money Laundering) checks
+  </li>
+</ul>
+<p>
+  <strong>Our Role</strong>: We act as a platform facilitating connections between donors and recipients. 
+  Stripe Connect handles the actual payment processing and fund transfers.
+</p>
+<p>
+  <strong>Commission Structure</strong>:
+</p>
+<ul>
+  <li><strong>Platform Fee</strong>: 4% of each tip (deducted automatically)</li>
+  <li><strong>Stripe Processing Fees</strong>: Standard Stripe fees apply (1.4% + €0.25 per transaction in EU)</li>
+  <li><strong>Payout Timing</strong>: Payouts to recipients follow Stripe's standard schedule (typically 7 days for Italian accounts)</li>
+</ul>
+<p>
+  Complete fee details are available in our <a href="#terms">Terms of Service</a> and visible during the tip process.
+</p>
   
   <h2>Retention of Your Personal Data</h2>
   <p>
@@ -468,6 +624,67 @@
 <p>
   <em>Note</em>: Deleting consent data <strong>does not</strong> entitle you to a refund,
   as Credits are a digital service provided immediately (Art. 59 Italian Consumer Code).
+</p>
+
+  <h3>Stripe Connect Data Retention</h3>
+<p>
+  <strong>Stripe Account Data</strong>: Retained while your account is active and connected to Stripe Connect.
+  If you disconnect your Stripe account, we retain:
+</p>
+<ul>
+  <li>Historical transaction records: <strong>5 years</strong> (for tax and accounting compliance)</li>
+  <li>Platform commission records: <strong>5 years</strong> (financial reporting requirements)</li>
+  <li>Stripe account ID reference: <strong>Indefinitely</strong> (to prevent re-onboarding issues)</li>
+</ul>
+<p>
+  <strong>Tip Transaction Data</strong>:
+</p>
+<ul>
+  <li>Successful transactions: <strong>5 years</strong> (Italian tax compliance)</li>
+  <li>Failed/refunded transactions: <strong>2 years</strong> (dispute resolution)</li>
+  <li>Fee calculation records: <strong>5 years</strong> (financial auditing)</li>
+</ul>
+<p>
+  <strong>Stripe's Data Retention</strong>: Stripe maintains its own data retention policies as described in their 
+  <a href="https://stripe.com/privacy" target="_blank">Privacy Policy</a>. We encourage you to review Stripe's policies 
+  regarding financial data retention.
+</p>
+
+  <h3>Stripe Connect Data Rights</h3>
+<p>
+  You have the right to:
+</p>
+<ul>
+  <li>
+    <strong>Access Stripe Data</strong>: View your Stripe Connect account status, transaction history, and fee breakdowns
+  </li>
+  <li>
+    <strong>Disconnect Stripe</strong>: Disconnect your Stripe Connect account at any time through the dashboard
+  </li>
+  <li>
+    <strong>Export Tip Data</strong>: Request export of your tip transaction history in machine-readable format
+  </li>
+  <li>
+    <strong>Correct Information</strong>: Update your payout information directly through Stripe's dashboard
+  </li>
+</ul>
+<p>
+  <strong>Important Limitations</strong>:
+</p>
+<ul>
+  <li>
+    <strong>Financial Data Correction</strong>: Corrections to financial verification data must be made directly through Stripe
+  </li>
+  <li>
+    <strong>Transaction Modification</strong>: Completed tip transactions cannot be modified (except through refund process)
+  </li>
+  <li>
+    <strong>Platform Commission</strong>: Our 4% commission is non-negotiable and applied to all tips
+  </li>
+</ul>
+<p>
+  <strong>Data Portability</strong>: You can request export of your tip data for transfer to another platform, 
+  subject to Stripe's data portability policies and technical feasibility.
 </p>
   
   <h2>Transfer of Your Personal Data</h2>
@@ -612,6 +829,84 @@
   <li>Review of account activity and history</li>
   <li>Compliance with security protocols</li>
 </ul>
+
+  <h2>Tips and Donations Service Specifics</h2>
+
+<h3>Eligibility and Account Requirements</h3>
+<p>
+  To receive tips through JukeBox, you must:
+</p>
+<ul>
+  <li>Be at least 18 years old (or age of majority in your jurisdiction)</li>
+  <li>Complete Stripe Connect onboarding, including identity verification</li>
+  <li>Have a valid bank account in a supported country</li>
+  <li>Comply with Stripe's Terms of Service and acceptable use policies</li>
+</ul>
+
+<h3>Fee Structure and Payout Timing</h3>
+<p>
+  <strong>Our Platform Commission</strong>: 4% of each tip received
+</p>
+<p>
+  <strong>Stripe Processing Fees</strong>:
+</p>
+<ul>
+  <li>Standard European rates: 1.4% + €0.25 per transaction</li>
+  <li>For tips under €5: "Direct Charge" applies (donor pays all Stripe fees)</li>
+  <li>For tips €5 and above: Standard shared fee model applies</li>
+</ul>
+<p>
+  <strong>Payout Schedule</strong>: 
+</p>
+<ul>
+  <li>Italy: 7-day rolling schedule (standard for Italian Stripe Connect accounts)</li>
+  <li>Payout currency: EUR (Euro) only</li>
+  <li>Minimum payout amount: None (all eligible balances are paid out)</li>
+</ul>
+
+<h3>Tax Responsibilities</h3>
+<p>
+  <strong>Important</strong>: You are solely responsible for:
+</p>
+<ul>
+  <li>Reporting tip income to relevant tax authorities</li>
+  <li>Paying any applicable income taxes on received tips</li>
+  <li>Maintaining records of your tip earnings</li>
+  <li>Understanding and complying with tax regulations in your jurisdiction</li>
+</ul>
+<p>
+  We provide transaction history for your records but do not issue tax forms (unless legally required).
+</p>
+
+<h3>Dispute Resolution and Refunds</h3>
+<p>
+  <strong>Dispute Handling</strong>: Payment disputes are managed through Stripe's dispute resolution process.
+  We may provide relevant transaction information to Stripe to assist with disputes.
+</p>
+<p>
+  <strong>Refund Policy</strong>: Tips are generally non-refundable. In exceptional circumstances, 
+  refunds may be issued at our discretion or as required by law. Platform commissions on refunded 
+  transactions are also refunded.
+</p>
+
+<h3>Service Availability and Limitations</h3>
+<p>
+  The Tips feature may not be available in all countries due to:
+</p>
+<ul>
+  <li>Stripe Connect availability restrictions</li>
+  <li>Local regulatory requirements</li>
+  <li>Banking system compatibility</li>
+</ul>
+<p>
+  We reserve the right to suspend or terminate tip functionality for accounts that:
+</p>
+<ul>
+  <li>Violate our Terms of Service or community guidelines</li>
+  <li>Are flagged by Stripe for suspicious activity</li>
+  <li>Fail to maintain required verification status</li>
+  <li>Engage in fraudulent or deceptive practices</li>
+</ul>
   
   <h2>Links to Other Websites</h2>
   <p>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
@@ -628,4 +923,5 @@
 
 </body>
 </html>
+
 
